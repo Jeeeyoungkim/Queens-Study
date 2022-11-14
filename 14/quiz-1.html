@@ -9,7 +9,20 @@
 	<h2>4의 배수일까 아닐까</h2>
 
 	<script>
-	
+		var num, mod;
+		num = prompt("숫자를 입력하시오");
+		
+
+		if (num != null) {
+			mod = num%4;
+			if (mod === 0) {
+				document.write("<p>" + num +"은 4의 배수입니다.</p>")
+			} else {
+				document.write("<p>" + num +"은 4의 배수가 아닙니다.</p>")
+			}
+		} else {
+			document.write("");
+		}
 	</script>
 </body>
 </html>
